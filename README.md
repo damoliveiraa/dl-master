@@ -57,7 +57,7 @@ Arraste direto o arquivo baixado para uma planilha do Google, ou importe em `Arq
 |--------------|----------------------------------------|-----------------------|
 | Sheets       | Colunas separadas, valores flatten      | Para análise manual   |
 | IA           | Campos objeto/array como JSON puro      | Para ML, automação IA |
-| Raw          | 1 coluna com evento JSON inteiro        | Para parse avanzado   |
+| Raw          | 1 coluna com evento JSON inteiro        | Para parse avançado   |
 
 ---
 
