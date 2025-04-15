@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DataLayer Logger</title>
+  <script src="popup.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f7fa;
+      padding: 16px;
+      min-width: 260px;
+    }
+    #status {
+      margin: 10px 0 20px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    button {
+      display: block;
+      width: 100%;
+      background: #003B8E;
+      color: #fff;
+      border: 0;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:disabled {
+      background: #d1d5db; color: #555; cursor: not-allowed;
+    }
+    #download-sheets {
+      background: #08b17a;
+    }
+    #download-ia {
+      background: #f9a825;
+    }
+    #download-raw {
+      background: #673ab7;
+    }
+    #download-sheets:hover:not(:disabled) { background: #059d67;}
+    #download-ia:hover:not(:disabled) {background: #eba007;}
+    #download-raw:hover:not(:disabled) {background: #4b2589;}
+    #toggle {
+      background: #e53935;
+    }
+    #toggle.parado { background: #08b17a;}
+    #toggle.ativo { background: #e53935;}
+  </style>
+</head>
+<body>
+  <div id="status">Rastreio: Parado</div>
+  <button id="toggle">Iniciar</button>
+  <button id="download-sheets" disabled>Baixar para Sheets</button>
+  <button id="download-ia" disabled>Baixar para IA</button>
+  <button id="download-raw" disabled>Baixar 1 objeto por linha</button>
+</body>
+</html>
